@@ -6,13 +6,6 @@ import java.util.concurrent.TimeUnit;
 class DriverBRO{
    private static WebDriver driver;
 
-   LoginPage pageLogin = PageFactory.initElements(driver, LoginPage.class);
-
-    // pageLogin.reg();
-
-   //public static String urlProject = "http://nnmclub.to/";
-   //private static String urlGoogle = "https://www.google.ru/";
-
     public static WebDriver startBrouserChrome(String url) {
         BruserChrome();
         driver.get(url);
@@ -20,9 +13,7 @@ class DriverBRO{
         setPropertyTimeOut();
         return driver;
     }
-//    public static void open(String url) {
-//
-//    }
+
     public static void closeDriver() {
         driver.close();
     }
